@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+
+}
+h2{
+  position: fixed;
+  left: calc(50% - calc(70px / 2));
+  top: calc(50% - calc(150px / 2));
+
+
+}
+img{
+  position: absolute;
+  left: calc(50% - calc(150px / 2));
+  top: calc(50% - calc(150px / 2));
+  right: calc(50% - calc(150px / 2));
+  bottom: calc(50% - calc(150px / 2));
+  border: 20px solid black;
+  padding: 100px 150px;
+  background-color: white;
+
+}
+div.overlay div{
+  background-color: hsla(0, 0%, 90%, 1);
+  position: absolute;
+  width: 500px;
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px 10px hsla(0, 0%, 0%,.35);
+}
+div.overlay div::before{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 35px;
+  background-color: hsla(0, 0%, 80%, 1);
+  border-bottom: 1px solid hsla(0, 0%, 70%, 1);
+}
+div.overlay div::after{
+  content: 'x';
+  display: block;
+  width: 35px;
+}
+div{
+  background-color: hsla(0, 0%, 0%, .5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid black;
+}
