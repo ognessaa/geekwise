@@ -1,0 +1,18 @@
+section{
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+section div.div1, .div4{
+  background-color: rgb(0, 207, 27);
+  flex: 1
+}
+section div.div2, .div5{
+  background-color:rgb(34, 240, 223);
+  flex: 1
+}
+
+section div.div3, .div6 {
+  background-color: rgb(231, 46, 140);
+  flex: 1
+}
