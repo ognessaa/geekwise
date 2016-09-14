@@ -1,13 +1,15 @@
 body{
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+
 }
-header{
-  height: 500px;
-  background-image:url(../img/background.jpg);
-  background-position: center;
-  background-size: cover;
+header {
+  background-image: url(../img/helmet.jpg);
+  position: fixed;
+  top: -45px;
+  right: 200px;
   color: white;
+  height: 430px;
+  width: 870px;
 }
 nav{
   padding: 40px 10px
@@ -17,31 +19,27 @@ h1, ul {
   display: inline-block;
 }
 h1{
-  font-size: 44px;
+  font-size: 50px;
   letter-spacing: -5px;
+  float: left;
 }
 h1 a {
   text-decoration: none;
   color: inherit;
 }
 h1 span{
-  color: rgb(43, 161, 161)
+  color: rgb(190, 7, 7)
 }
-ul{
-  float: right;
-}
-ul li {
+ul li{
   display: inline-block;
-  line-height: 50px;
-  padding: 0 20px;
-  margin-left: 10px
+  padding: 10px;
 }
 ul li:hover{
   cursor: pointer;
 }
 ul li:hover,
 .active {
-  background-color: hsl(194, 84%, 66%);
+  background-color: rgb(190, 7, 7);
   border-top-right-radius: 20px 50%;
   border-top-left-radius: 20px 50%;
   border-bottom-left-radius: 20px 50%;
