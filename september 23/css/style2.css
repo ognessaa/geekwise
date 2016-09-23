@@ -1,0 +1,28 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+body{
+  color: rgb(150, 74, 218);
+}
+hr {
+  width: 30px;
+  margin-top: 100px
+}
+h1 {
+  color: rgb(150, 74, 218);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px
+}
+section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+div{
+  flex: 1
+}
+h5 {
+  margin: 5px;
+}
+h6 {
+  margin: 9px;
+}
