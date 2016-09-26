@@ -1,0 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+body{
+  font-family: 'Oswald', sans-serif;
+}
+header {
+  background-image: url("../img/banner.jpg");
+  text-align: center;
+}
+ul {
+  float: right;
+}

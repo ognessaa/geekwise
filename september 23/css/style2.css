@@ -4,21 +4,21 @@ body{
 }
 hr {
   width: 30px;
-  margin-top: 100px
+  margin-top: 100px;
 }
 h1 {
   color: rgb(150, 74, 218);
   display: flex;
   justify-content: center;
-  margin-bottom: 100px
+  margin-bottom: 100px;
 }
 section {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   text-align: center;
 }
 div{
-  flex: 1
+  flex: 1;
 }
 h5 {
   margin: 5px;
