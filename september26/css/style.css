@@ -1,11 +1,56 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald';
+@import 'https://fonts.googleapis.com/css?family=Slabo+27px';
 body{
   font-family: 'Oswald', sans-serif;
 }
 header {
+  color: white;
   background-image: url("../img/banner.jpg");
   text-align: center;
+  background-size: cover;
+  background-position: top;
+  height: 300px;
+  font-family: 'Slabo 27px', serif;
+
+}
+header h3 {
+  float: left;
+  margin-top: 0;
+  margin-left: 10px;
 }
 ul {
   float: right;
+  margin-top: 0
+}
+ul li {
+  display: inline-block;
+  margin: 0;
+}
+header h1 {
+padding-top: 140px;
+}
+header h4 {
+  color: rgb(161, 161, 161)
+}
+section {
+  display: flex;
+  padding-top: 55px;
+}
+section.main div {
+  border-right: 2px solid rgb(186, 186, 186);
+  text-align: center;
+}
+section.main div h2 {
+color: rgb(25, 103, 195);
+}
+section.main div p {
+  color: rgb(149, 146, 146);
+}
+section.main div button {
+ color: white;
+ background-color: rgb(25, 103, 195);
+ padding: 10px;
+ padding-left: 20px;
+ padding-right: 20px;
+ border: rgb(25,103, 195);
 }
