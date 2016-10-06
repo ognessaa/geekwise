@@ -1,0 +1,14 @@
+body {
+  margin: 0
+}
+img {
+  -webkit-column-width:value;
+  -moz-column-width:value;
+  column-width: value;
+  height: 100%;
+}
+div {
+  
+
+
+}

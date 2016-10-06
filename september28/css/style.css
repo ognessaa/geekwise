@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Oswald', sans-serif;
-  background-color: rgb(214, 214, 214)
+  background-color: white;
 }
 header {
   background-image: url(../img/dark_tint.png),url(../img/bokeh_car_lights_bg.jpg);
@@ -34,23 +34,27 @@ ul li:hover, .sign{
   border-bottom-left-radius: 20px 40%;
   border-bottom-right-radius: 20px 40%;
 }
-header button {
+header a {
   color: white;
   background-color: rgb(59, 167, 191);
   border: 2px solid rgb(59, 167, 191);
   border-radius: 40px;
   padding: 1%
 }
+main {
+  background-color: rgb(223, 223, 223);
+}
 aside {
   text-align: center;
-  margin-top: 55px;
+  padding-top: 55px;
   color: rgb(70, 66, 68);
+  padding-bottom: 30px
 }
-section:nth-last-of-type(1) {
+main section:nth-of-type(1) {
   text-align: center;
   display: flex;
 }
-section div {
+main section:nth-of-type(1) div {
   padding: 30px;
   background-color: white;
   color: rgb(129, 129, 129);
@@ -58,6 +62,9 @@ section div {
   margin-left: 30px;
   margin-top: 45px;
   text-align: center;
+}
+.second {
+  margin-bottom: 25px;
 }
 .first, .last {
   margin-bottom: 45px
@@ -81,5 +88,119 @@ section div {
   border: 3px solid rgb(231, 35, 99);
   color: white;
   border-radius: 30px;
-  padding: 20px
+  padding: 20px;
+}
+aside:nth-of-type(1) hr {
+  width: 65%;
+}
+aside:nth-of-type(1) p {
+  color: rgb(149, 149, 149);
+  font-size: 12px;
+}
+section:nth-of-type(1) {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(99, 99, 99);
+
+}
+section:nth-of-type(1) > div {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  color: rgb(129, 129, 129);
+  text-align:center;
+  padding-top: 35px;
+  font-size: 12px;
+}
+section:nth-of-type(1) div img{
+  border-radius: 100%;
+  float: left;
+}
+section:nth-of-type(1) div p{
+  margin: 0;
+}
+hr {
+  width: 65%;
+}
+section:nth-of-type(2) {
+  padding-bottom: 35px;
+}
+section:nth-of-type(2) p {
+  font-size: 12px;
+  text-align: center;
+  color:rgb(153, 153, 153);
+  padding-top: 35px;
+}
+section:nth-of-type(2) button {
+  color: white;
+  background-color: rgb(59, 167, 191);
+  border: 2px solid rgb(59, 167, 191);
+  border-radius: 40px;
+  padding: 1%;
+  position: relative;
+  left: calc(50% - 50px)
+}
+.almost {
+  background-color: rgb(59, 167, 191);
+  color: white;
+  text-align: center;
+}
+form {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0 25%;
+}
+form div {
+  padding-bottom: 10px;
+}
+form input {
+  height: 25px;s
+}
+form textarea {
+  margin: 0 25%;
+  height: 100px;
+}
+section:nth-of-type(3) button {
+color: white;
+background-color: rgb(46, 46, 46);
+border: 2px solid rgb(59, 167, 191);
+border-radius: 40px;
+padding: 1%;
+}
+footer {
+  background-color:rgb(88, 88, 88);
+  display: flex;
+}
+footer div {
+  color: white;
+  text-align: center;
+}
+footer div p {
+  font-size: 11px;
+  padding: 15px
+}
+footer .icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+footer .fa-facebook-square {
+  border-radius: 100%;
+  color: blue;
+  border: 4px solid blue
+}
+footer .fa-twitter {
+  border-radius: 100%;
+  background-color: rgb(60, 150, 200);
+  border: 4px solid rgb(60, 150, 200)
+}
+footer .fa-google-plus-official {
+  border-radius: 100%;
+  background-color: rgb(212, 28, 28);
+  border: 4px solid rgb(212, 28, 28)
+
 }
