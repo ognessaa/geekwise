@@ -1,0 +1,48 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+body {
+  margin: 0
+}
+#items {
+  margin: 0;
+  display: flex;
+  background-color: rgb(35, 170, 194);
+  color: white;
+}
+section div {
+  margin: 30px
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 600px
+}
+/*section div:hover {
+  background-color: black*/
+}
+section div h1 {
+  font-size: 32px;
+}
+section div p {
+  padding-bottom: 35px;
+}
+section div a {
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: hsl(198, 69%, 49%);
+}
+section div a:hover {
+  background-color: black
+}
+#items div:hover img{
+  transform: rotateY(360deg) scale(.9);
+}
+#items img {
+  transition: transform 400ms ease-in-out
+}
+@media screen in (max-width 760px){
+  #items div {
+    width: calc(100% / 2 - 2vw);
+    margin-right: 2vw;
+  }
+}

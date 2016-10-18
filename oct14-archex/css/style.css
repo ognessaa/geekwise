@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header{
+  background-image:url(../img/slide-1.jpg);
+  background-position: center;
+  height: 600px;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vw;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+nav li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top:-200%;
+  left: 0;
+  background-image: linear-gradient(
+  hsla(189, 69%, 49%, .75),
+  hsla(189, 89%, 49%, 0),
+  hsla(0, 0%, 100%, .75)
+  );
+  transition: top 800ms ease-in-out
+}
+nav li:hover::after {
+  top: 100%
+}
+nav li span {
+  flex: none;
+  display: flex;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 400ms ease-in-out
+}
+nav li span:first-child {
+  background-color: hsla(189, 69%, 49%, 0);
+  transition: background-color 400ms ease-in-out
+}
+nav li span:last-child {
+  background-color: hsla(0, 0%, 100%, 0);
+  transition: background-color 400ms ease-in-out
+}
+nav li:hover span {
+  transform: translateY(0%);
+}
+nav li:hover span:first-child {
+  background-color: hsla(189, 69%, 49%, 1);
+  transition: background-color 400ms ease-in-out
+}
+nav li:hover span:last-child {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+nav li a {
+  display: flex;
+  align-items: center;
+  padding: 10px
+}
+/*nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}*/
+nav img {
+  padding-top: 27px;
+  padding-left: 35px;
+  height: 21px;
+  width: 122px;
+}
+
+/*nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+nav ul li {
+  padding: 10px
+}
+nav ul li:hover{
+  cursor: pointer;
+}
+nav ul li:hover,
+.active {
+  background-color: hsl(189, 69%, 49%);
+}*/
+header h1 {
+  position: absolute;
+  top: 20%;
+  right: 33%;
+  font-size: 145px;
+}
+header p {
+  position: absolute;;
+  top: 355px;
+  right: 20%;
+  font-size: 24px;
+}
+section {
+  display: flex;
+  padding: 60px
+}
+div {
+  height: 700px;
+  padding: 20px;
+  padding-top: 60px;
+  color: white;
+  margin: 1vw;
+  flex: 1;
+  background-color: hsl(189, 69%, 49%);
+  flex-direction: row;
+  justify-content: space-around;
+}
