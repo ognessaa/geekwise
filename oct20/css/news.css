@@ -1,0 +1,110 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+@font-face {
+  font-family: 'BrushScript';
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot');
+  src: url('http://matthewhigley.com/fonts/BrushScriptStd.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/BrushScriptStd.svg#eb21f6604ba28d5573abad1c01255830') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+@font-face {
+  font-family: 'Fraktur';
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot');
+  src: url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.woff') format('woff'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.ttf')  format('truetype'),
+       url('http://matthewhigley.com/fonts/Fraktur-BT-Regular.svg#f78369fb7f540f355d128fc492e4218d') format('svg');
+  font-style:   normal;
+  font-weight:  400;
+}
+body{
+  background-color: hsl(0, 89%, 14%);
+  margin: 2vw 15vw;
+}
+header{
+    font-family: 'Fraktur';
+}
+nav, h2, h3{
+  font-family: 'BrushScript';
+}
+h1, h2, h3, ul, hr{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h2, h3, nav ul li{
+  color: white;
+  text-shadow:
+    -1px -1.5px 0.5px hsl(0, 79%, 24%),
+     1px -1.5px 0.5px hsl(0, 79%, 24%),
+     -1px 1.5px 0.5px hsl(0, 79%, 24%),
+    1px 1.5px 0.5px hsl(0, 79%, 24%);
+}
+h2{
+  font-size: 4.5vh;
+}
+header, main{
+  border: 3px hsl(0, 0%, 1%) solid;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header,
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+section, div,
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header div{
+  background-color: white;
+  flex: 1;
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 45px;
+}
+header div h1{
+  color: hsl(52, 72%, 56%);
+  text-shadow:
+    -1px -1px 1px hsl(0, 0%, 8%),
+     1px -1px 1px hsl(0, 0%, 8%),
+}
+header div span{
+  font-size: 4.5vw;
+}
+header img{
+  flex: 3;
+}
+nav{
+  border: 2px hsla(0, 0%, 40%, 0.5) dotted;
+  border-left: none;
+  border-right: none;
+  margin: 15px 5px;
+  padding: 7px 15px;
+}
+nav ul{
+  justify-content: space-around;
+}
+nav ul li{
+  font-size: 2vw;
+  font-style: italic;
+}
+nav ul li:hover{
+  color: white;
+}
+main{
+  background-color: white;
+}
+section{
+  justify-content: center;
+  align-items: center;
+}
+s
