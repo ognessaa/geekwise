@@ -1,0 +1,18 @@
+@media screen and (max-width:774px){
+  body{
+    border: none;
+    margin: 0;
+  }
+  hr{
+    display: none;
+  }
+  body > header > main {
+    border: none;
+  }
+  body > header {
+    background-image:
+  }
+    header div{
+      display: none;
+    }
+}
