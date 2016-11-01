@@ -242,3 +242,25 @@ margin:  5px 0
   border-bottom-width: 1px;
   padding-bottom: 25px;
 }
+
+
+@media screen and (max-width:776px){
+  header nav{
+    flex-wrap: wrap;
+  }
+  header nav img{
+    width: 50%;
+  }
+  header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  header nav ul li{
+    background-color: red;
+    background-image: none;
+  }
+  header nav ul li a{
+    font-size: 3vw;
+  }
+}
