@@ -1,0 +1,102 @@
+html{
+  background-image: url(../img/headbg.jpg) ,url(../img/bobybg.jpg);
+  background-color: black;
+  background-position: center top;
+  background-repeat: no-repeat, repeat-x;
+  color: white;
+}
+body {
+  color: white;
+  margin: 0;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+section {
+  width: 64%;
+  float: left;
+  background-image: url(../img/leftbg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+aside {
+  width: 34%;
+  float: right;
+  background-image: url(../img/rightbg.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+main::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#mega {
+  background-color: hsl(9, 83%, 9%);
+}
+#mega .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  position: relative;
+}
+#mega .container div {
+  width: calc(75%/ 3)
+}
+#mega .container .pump {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body > :first-child {
+  position: relative;
+}
+body > :first-child .pump {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+}
+@media screen and (max-width:779px){
+  .container{
+    width: 100%;
+  }
+  section{
+    width: 100%;
+    background-image: url(../img/mainbg.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 48px;
+  }
+  section,aside{
+    width: 100%;
+    background-image: none;
+  }
+  aside {
+    display: none;
+  }
+  #mega .container {
+    display: block;
+  }
+  #mega .container div {
+    width: 100%;
+  }
+}
+@media screen and (max-width:450px){
+  .container{
+    width: 100%;
+  }
+  section,aside{
+    width: 100%;
+    background-image: none;
+  }
+  aside {
+    display: none;
+  }
+  #mega .container {
+    display: block;
+  }
+  #mega .container div {
+    width: 100%
+  }
+}
