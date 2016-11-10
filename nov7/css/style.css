@@ -1,3 +1,4 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Chewy');
 html {
@@ -90,4 +91,18 @@ main .effect{
 }
 #reference {
   text-align: center;
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  padding-top: 55px;
+}
+.fa-facebook-square, .fa-instagram, .fa-twitter {
+  flex-direction: row;
+  font-size: 30px;
+  color: white;
 }
