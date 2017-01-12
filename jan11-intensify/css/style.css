@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  html {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .btn {
+    border: solid 1px lightgrey;
+    background-color: white;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+  }
+  .btn-cta {
+    background-color: hsl(9, 89%, 67%);
+    border: none;
+    color: white;
+
+  }
+  nav h1 {
+    margin: 0;
+    font-family: Pacifico, cursive;
+    color: hsl(9, 89%, 67%);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+    padding: 20px;
+  }
+  nav div {
+    transition: all 250ms ease-out;
+    background-color: hsl(193, 68%, 45%);
+    position: absolute;
+    top: 0;
+    left: -500px;
+    width: 250px;
+    height: 100vh
+  }
+  nav div.open {
+    left: 0px;
+  }
+  nav div i {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+    color: white;
+  }
+
+  nav li {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+  }
+  nav a {
+    display: inline-block;
+    padding: 15px 0 ;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-family: inherit;
+  }
+
+  #hero {
+    background-image: url(../img/banner.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 100px;
+  }
+  #hero div {
+    width: 75%;
+  }
+  #hero .btn {
+    display: inline-block;
+  }
+.phone {
+  display: flex;
+  padding: 20px;
+  padding-top: 50px;
+}
+.phone aside:nth-of-type(1) , .phone aside:nth-of-type(3) {
+  padding: 30px;
+}
+.phone aside:nth-of-type(1) {
+  text-align: right;
+}
+.img img {
+  border-radius: 50%;
+  padding: 40px;
+}
+aside div {
+  padding: 30px;
+}
+div h4 {
+  color: hsl(193, 68%, 45%);
+}
+aside div p {
+  color: gray ;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.alfredo-pink {
+  background-color: hsl(9, 89%, 67%);
+  text-align: center;
+  color: white;
+}
+.alfredo h3 {
+  padding-top: 50px;
+}
+.alfredo p {
+  font-size: 10px;
+  opacity: .5;
+}
+.alfredo h5 {
+  margin-bottom: 0;
+}
+.alfredo-pink p:nth-of-type(2) {
+  margin-top: 5px;
+  padding-bottom: 50px;
+}
+.row {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.row div {
+  border: 1px solid #ECEEEF;
+  margin-right: 5%;
+}
+.row div img {
+  width: 100%;
+}
+.row h3 {
+  text-align: left;
+  color: hsl(193, 68%, 45%);
+
+}
+.row p {
+  text-align: left;
+  font-size: 12px;
+  opacity: .5;
+  padding-bottom: 10px;
+}
+.row h3, .row p {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.row div:nth-of-type(1) {
+  margin-left: 5%
+}
+.row div:nth-of-type(3) {
+  margin-right: 5%;
+}
+.blue {
+  background-color: #25A2C3;
+}
+.blue h3 {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+.blue i {
+  margin-top: 22px;
+  margin-right: 5px;
+  color: #F6755E;
+}
+.fa-phone {
+  margin-left: 40%;
+}
+.blue h6 {
+  color: white;
+  opacity: .5;
+}
+.blue > div {
+  display: flex;
+}
+.blue > div div:nth-of-type(1) {
+  margin-left: 25%;
+}
+.blue > div div {
+  display: flex;
+  margin-left: 80px;
+}
+hr {
+  width: 30%;
+}
+footer p {
+  text-align: center;
+  font-size: 10px;
+  opacity: .5;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
