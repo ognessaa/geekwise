@@ -1,122 +1,226 @@
-@import 'variables';
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+$main-color: hsl(165, 43%, 60%);
+$bg-color: #F5F6F7;
+$bold-color: #3D4449;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body{
   margin: 0;
   font-family: 'Roboto Slab';
-
+  display: flex;
+  ul, li, a{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  .btn{
+    border: 2px solid $main-color;
+    color: $main-color;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .btn:hover{
+     background-color: transparentize($main-color, 0.95);
+  }
+  .base-style{
+    display: inline-block;
+    color: $bold-color;
+    border-bottom: 2.5px solid $main-color;
+    font-size: 17px;
+    padding:0 10px 10px 0;
+  }
+  .b-s-add{
+    font-size: 5vh;
+    border-width: 3px;
+  }
 }
-ul{
-  list-style: none;
-  padding: 0;
-}
-p{
-  color: darken($terciary-color, 40%);
-  font-size:11px;
-}
-a{
-  text-decoration: none;
-}
-h1, h2, h3, h4{
-  color: $secondary-color;
-  font-weight: 700;
+nav.open{
+  left: 0;
 }
 nav{
   position: absolute;
-  left: -500px;
+  left: -300px;
   width: 300px;
-  > div{
-    background-color: darken($terciary-color, 5%);
-    padding: 20px;
-    input{
-      margin: 5px 0;
-      width: 90%;
-      padding: 7px;
-      border-radius: 3px;
-      border: 1px solid darken($terciary-color, 30%);
+  background-color: $bg-color;
+  font-size: 11px;
+  aside{
+    margin: 8%;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 30px;
+    a{
+      display: inline-block;
+      overflow: hidden;
+    }
+    img{
+      width: 100%;
+      border-radius: 5px;
+      transition: 250ms all ease-in-out;
+      margin-top: 20px;
+    }
+    img:hover{
+      transform: scale(1.1);
     }
   }
-  h3{
-    margin: 20px 0;
-  }
-  h3 + hr{
-    border: 1.5px solid $primary-color;
-    transform: translateY(-25px);
-    position: absolute;
-  }
-  h3 + hr:nth-of-type(1){
-    width: 60px;
-  }
-  h3 + hr:nth-of-type(2){
-    width: 120px;
+  div{
+    width: 100%;
+    background-color: darken($bg-color,5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+      width: 75%;
+      padding: 8px 0 8px 10px;
+      margin: 15px 10px 15px 0;
+      border-radius: 5px;
+      border: 1px solid lightgrey;
+    }
   }
   ul li{
-    border-bottom: 1px solid darken($terciary-color, 15%);
-  }
-  ul:nth-of-type(1) li a{
-    display: block;
-    color: $secondary-color;
-    transition: color 200ms ease-in-out;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 10px 0;
-    letter-spacing: 1px;
-  }
-  li a:hover{
-    color: $primary-color;
-  }
-  ul:nth-of-type(2) a{
-    display: inline-block;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 157px;
-  }
-
-  ul:nth-of-type(2) a:last-of-type{
-    height: auto;
-  }
-  ul:nth-of-type(2) li{
-    margin: 20px 0;
-  }
-
-  img{
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 250ms ease-in-out;
-  }
-  img:hover{
-    transform: scale(1.1);
-  }
-}
-.btn{
-  color: $primary-color;
-  border: 1px solid $primary-color;
-  padding: 10px 15px;
-  border-radius: 3px;
-  display: inline-block;
-}
-div.container{
-  background-color: $terciary-color;
-  footer hr{
-    width: 110px;
-  }
-}
-.edit {
-  display: flex;
-  flex-direction: row;
-  color: gray;
-  justify-content: space-between;;
-  span {
-    color: black
-  }
-section{
-   display: flex;
-    .content {
-      // display: flex;
-    }
-    h1 {
-      font-size: 46px;
+    padding: 13px 0;
+    border-bottom: 1px solid lightgrey;
+    letter-spacing: 1.3px;
+    position: relative;
+    i.fa-angle-down{
+      font-size: 15px;
+      font-weight: 900;
+      color: darken($bg-color, 60%);
+      position: absolute;
+      top: 10px;
+      right: 0;
     }
   }
-
+  ul:first-of-type li:last-of-type{
+    border: none;
+  }
+  ul ul{
+    margin-left: 25px;
+    display: none;
+  }
+  ul ul li{
+    border: none;
+    padding: 6px 0;
+    color: darken($bg-color, 30%);
+  }
+  p{
+    color: darken($bg-color, 60%);
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+  }
+  aside:nth-of-type(3){
+    padding-bottom: 5px;
+  }
+  aside:nth-of-type(3) p:first-of-type, aside:nth-of-type(3) p:last-of-type,
+  aside:nth-of-type(3) + p{
+    border: none;
+  }
+  aside:nth-of-type(3) p{
+    font-size: 13px;
+  }
+  p i.fa{
+    color: $main-color;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  aside:nth-of-type(3) + p{
+    padding: 5% 8% 10%;
+  }
+  i.fa-bars{
+    color: $main-color;
+    position: absolute;
+    top: 25px;
+    right: -50px;
+    font-size: 26px;
+  }
+}
+.small{
+  margin-left: 300px;
+}
+main{
+  width: 100vw;
+  padding: 40px 7%;
+  box-sizing: border-box;
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid $main-color;
+    font-size: 11px;
+    h1{
+      transition: 250ms all ease-in-out;
+    }
+    h1 span{
+      color: lighten($bold-color, 30%);
+      font-weight: 400;
+      transition: 250ms all ease-in-out;
+    }
+    h1:hover, h1:hover span, div i.fa:hover{
+      color: $main-color;
+    }
+    div i.fa{
+      padding: 5px;
+      font-size: 20px;
+    }
+  }
+  section.one{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    border-bottom: 1px solid lightgrey;
+    aside{
+      color: lighten($bold-color, 30%);
+      width: 70%;
+       h2{
+         margin: 0;
+         padding: 0;
+        font-size: 3.5vw;
+        color: $bold-color;
+      }
+      p:first-of-type{
+        padding: 5px 0;
+        letter-spacing: 1.5px;
+      }
+      p:last-of-type{
+        width: 90%;
+        padding: 10px 0 60px;
+        font-size: 14px;
+      }
+    }
+    img{
+      width: 50%;
+      height: 400px;
+      border-radius: 5px;
+    }
+  }
+  section.two{
+    div.parent{
+      display: flex;
+      flex-wrap: wrap;
+      div{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        i.fa{
+          font-size: 12vh;
+          color: $main-color;
+          padding: 15px;
+          position: relative;
+        }
+        i::after{
+          content: "";
+          border: 1px solid lightgrey;
+          padding: 60px;
+          position: absolute;
+          top: -10px;
+          left: 0;
+          transform: rotateZ(45deg);
+        }
+        aside{
+          width: 75%;
+        }
+      }
+    }
+  }
 }
