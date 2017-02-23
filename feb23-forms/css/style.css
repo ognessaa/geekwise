@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin: 0;
+}
+nav{
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  
+}

@@ -1,18 +1,20 @@
-// function funcName(){
-//   var userName = prompt('What is your full name?').trim();
-//   console.log(userName);
-//   b(userName);
-// }
-// function b(user){
-//   var cased = user.charAt(0).toUpperCase() + user.substr(1).toLowerCase();
-//   c(cased);
-// }
-// funcName();
-//   alert(user);
-//
+function funcName(){
+  var userName = prompt('What is your full name?').trim();
+  console.log(userName);
+  b(userName);
+}
+function b(user){
+  var cased = user.charAt(0).toUpperCase() + user.substr(1).toLowerCase();
+  c(cased);
+}
+funcName();
+  alert(user);
+
 
 var alf = document.getElementById('alf');
 var waldo = document.getElementById('waldo');
+var content = document.getElementById('content');
+
 
 alf.addEventListener('click', function(){
   userFirstName = prompt('whats your first name?');
@@ -34,8 +36,9 @@ waldo.addEventListener('click', function(){
     }else {
       alert('please type your name');
     }
-  alert(userFirstName + userLastName);
-  // waldo.removeAttribute('disabled');
-  // alf.setAttribute('disabled', true);
+    div.content = userFirstName + userLastName
+  // alert(userFirstName + userLastName);
+  waldo.removeAttribute('disabled');
+  alf.setAttribute('disabled', true);
 
 });
